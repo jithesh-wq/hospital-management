@@ -2,18 +2,14 @@ import React from 'react'
 import './Count.css'
 function Count() {
     return (
-        <div className="drComponent">
-            <div className="ppContainer">
-                <img src="https://img.freepik.com/free-vector/doctor-character-background_1270-84.jpg?size=338&ext=jpg" className="drPhoto"/>
-            </div>
-            <div className="nameContainer">
-                <p className="drName">Dr. Aidan Crivaro</p>
-                <p className="status">Available</p>
-            </div>
-            <div className="statusContainer">
-                <div className="dot" style={{backgroundColor:"red"}}></div>
-            </div>
-        </div>
+      <div className = "countContainer">
+          <div className= "countTitleContainer">
+            <p className = "coountTitle">Todays Covid Cases</p>
+          </div>
+          <div className = "countValueContainer">
+            <p className = "countValue">76</p>
+          </div>
+      </div>
     )
 }
 
