@@ -1,6 +1,7 @@
 import './App.css';
 import NavItem from './components/NavItem';
 import DashBoard from './pages/DashBoard'
+import Admit from './pages/Admit'
 import {
   Route,
   NavLink,
@@ -58,8 +59,8 @@ function App() {
         </div>
         <div className = "pageContainer">
             <Route exact path="/" component={DashBoard}/>
-            {/* <Route path="/stuff" component={Stuff}/>
-            <Route path="/contact" component={Contact}/> */}
+            <Route exact path="/admitpatient" component={Admit}/>
+            
         </div>
       </div>
     </HashRouter>

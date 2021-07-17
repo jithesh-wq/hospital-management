@@ -3,7 +3,7 @@ import './BigButton.css'
 function BigButton(props) {
     return (
         <div className="button" style={{backgroundColor:props.buttonBg}}>
-            <img className="buttonImg" src={props.link}/>
+            <img alt="button" className="buttonImg" src={props.link}/>
             <p className="buttonName">{props.option}</p>
             <p className="buttonName">patient</p>
         </div>
