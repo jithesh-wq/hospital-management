@@ -5,6 +5,10 @@ import Doctor from '../components/Doctor'
 import Calendar from 'react-calendar';
 import Count from '../components/Count'
 import './Calender.css'
+import BigButton from '../components/BigButton';
+import {
+  NavLink
+} from "react-router-dom";
 function DashBoard() {
     return (
         <div className = "dashboardContainer">
@@ -17,7 +21,15 @@ function DashBoard() {
                     
                 </div>
                 <div className="allButtonContainer">
-                    test2
+                    <NavLink className="bigButtonLink" style={{textDecoration:'none',}} to="/admitpatient">
+                        <BigButton option="add" buttonBg="#FFDBDB" link="https://img.icons8.com/material-rounded/96/000000/plus--v1.png"/>
+                    </NavLink>
+                    <NavLink className="bigButtonLink" style={{textDecoration:'none',}} to="/dischargepatient">
+                    <BigButton option="discharge" buttonBg="#C5FFD6" link="https://i.ibb.co/9bnvW6L/MINUS.png"/>
+                    </NavLink>
+                    <NavLink className="bigButtonLink" style={{textDecoration:'none',}} to="/updatepatient">
+                        <BigButton option="update" buttonBg="#CFDAFF" link="https://img.icons8.com/material-rounded/96/000000/plus--v1.png"/>
+                    </NavLink>
                 </div>
             </div>
             <div className = "secondContainer">
@@ -61,3 +73,20 @@ function DashBoard() {
 }
 
 export default DashBoard
+
+
+
+
+ 
+                //     <NavItem linkName="admit"/>
+                //   </NavLink>
+                // </li>
+                // <li>
+                //   <NavLink className="link" style={{textDecoration:'none',}} to="/dischargepatient">
+                //     <NavItem linkName="discharge"/>
+                //   </NavLink>
+                // </li>
+                // <li>
+                //   <NavLink className="link" style={{textDecoration:'none',}} to="/updatepatient">
+                //     <NavItem linkName="update"/>
+                //   </NavLink>

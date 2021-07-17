@@ -26,7 +26,23 @@
 .allButtonContainer{
     width: 90%;
     height: 20%;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.bigButtonLink:focus {
+    color: inherit;
+}
+
+.bigButtonLink {
+    color: black;
+    width:90px;
+    height: 90%;
+}
+
+.bigButtonLink:active {
+    color: rgb(41, 29, 73);
 }
 
 .secondContainer {

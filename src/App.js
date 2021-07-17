@@ -22,7 +22,7 @@ function App() {
                 </li>
                 <li>
                   <NavLink className="link" style={{textDecoration:'none'}} to="/covidCases">
-                    <NavItem linkName="covid Cases"/>
+                    <NavItem linkName="covid cases"/>
                   </NavLink>
                 </li>
                 <li>
