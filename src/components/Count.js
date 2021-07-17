@@ -1,13 +1,13 @@
 import React from 'react'
 import './Count.css'
-function Count() {
+function Count(props) {
     return (
       <div className = "countContainer">
           <div className= "countTitleContainer">
-            <p className = "coountTitle">Todays Covid Cases</p>
+            <p className = "coountTitle">{props.title}</p>
           </div>
-          <div className = "countValueContainer">
-            <p className = "countValue">76</p>
+          <div className = "countValueContainer" style={{backgroundColor:props.valueBg}}>
+            <p className = "countValue">{props.value}</p>
           </div>
       </div>
     )

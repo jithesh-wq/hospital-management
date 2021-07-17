@@ -6,14 +6,27 @@
 }
 
 .firstContainer {
-    background-color: red;
+    /* background-color: red; */
     width: 40%;
     height: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 
+}
+.allCountContainer{
+    width: 90%;
+    height: 50%;
+    /* background-color: blue; */
+    box-sizing: border-box;
+    padding: 5px;
+}
+.allButtonContainer{
+    width: 90%;
+    height: 20%;
+    background-color: white;
 }
 
 .secondContainer {
@@ -24,13 +37,6 @@
     justify-content: center;
     align-items: center;
 
-}
-
-.thirsContainer {
-    background-color: brown;
-    width: 30%;
-    height: 100%;
-    box-sizing: border-box;
 
 }
 
@@ -54,8 +60,42 @@
     display: flex;
     align-items: center;
 }
+.thirdContainer {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+
 .containerTitle{
     padding-top: 10px;
     font-size: 20px;
 }
+.alldrContainer{
+    background-color: white;
+    width: 85%;
+    height: 63%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.calendarContainer{
+    width: 85%;
+    height: 35%;
+}
 
+.doctorList{
+    width: 100%;
+    height: 89%;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}

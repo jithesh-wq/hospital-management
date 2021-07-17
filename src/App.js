@@ -12,7 +12,7 @@ function App() {
       <div className="appContainer">
         <div className="navContainer">
              <div className="logo">
-                  <img className="logoImg" src="https://i.pinimg.com/originals/46/0b/ec/460bec2777fe7d4a4fec0dde54fdabde.png"/>
+                  <img alt="logo" className="logoImg" src="https://i.pinimg.com/originals/46/0b/ec/460bec2777fe7d4a4fec0dde54fdabde.png"/>
              </div>
              <ul className="navLinks">
                 <li>

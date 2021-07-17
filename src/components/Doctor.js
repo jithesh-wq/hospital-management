@@ -1,6 +1,6 @@
 import React from 'react'
 import './Doctor.css'
-function Doctor() {
+function Doctor(props) {
     return (
          <div className="drComponent">
             <div className="ppContainer">
@@ -8,10 +8,10 @@ function Doctor() {
             </div>
             <div className="nameContainer">
                 <p className="drName">Dr. Aidan Crivaro</p>
-                <p className="status">Available</p>
+                <p className="status">{props.online==="true"?"Available":"Not Available "}</p>
             </div>
             <div className="statusContainer">
-                <div className="dot" style={{backgroundColor:"red"}}></div>
+                <div className="dot" style={{backgroundColor:props.online==="true"?"#32CD32":"red"}}></div>
             </div>
         </div>
     )
