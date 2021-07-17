@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './Admit.css'
+import './UpdatePatient.css'
 import Button from "../components/Button"
-import {Data} from "../data/Data"
-function Admit() {
+import SearchBox from '../components/SearchBox'
+function UpdatePatient() {
     const [name, setName] = useState("")
     const [age, setAge] = useState("")
     const [phone, setPhone] = useState("")
@@ -35,13 +35,14 @@ function Admit() {
       setRoomNo("")
     }
     return (
-        <div className="admitContainer">
-            <div className="headingContainer">
+        <div className="updateContainer">
+            <div className="headingContainerUpdate">
                 <div className="headingTextContainer">
                     <p className="headingText">
-                        ADMIT PATIENT
+                        UDATE PATIENT
                     </p>
                 </div>
+                <SearchBox placeholder="search by name" buttonName="Search" />
             </div>
             <div className="inputContainer">
                 <div className="nameInput">
@@ -100,11 +101,11 @@ function Admit() {
                 </div>
             </div>
             <div className="admitButtonContainer">
-                <Button text="Add +" click={handleAdd}/>
+                <Button text="Update" click={handleAdd}/>
                 <Button text = "Clear" click={handleClear}/>
             </div>
         </div>
     )
 }
 
-export default Admit
+export default UpdatePatient

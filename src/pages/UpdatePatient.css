@@ -1,4 +1,4 @@
-.patientsContainer {
+.updateContainer {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -17,26 +17,20 @@
     align-items: center;
 }
 
-.dataContainer {
+.inputContainer {
     width: 95%;
     height: 80%;
     background-color: white;
     border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
 
 }
 
-.pageNumberContainer {
+.admitButtonContainer {
     width: 95%;
     height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-
 }
 
 .headingTextContainer {
@@ -54,15 +48,50 @@
     font-size: 16px;
 }
 
-.currentPage {
-    color: white;
-    font-variant: small-caps;
-    font-size: 10px;
+.inputContainer {
+    padding: 25px;
+    box-sizing: border-box;
 }
 
-.pNumberContainer {
+.nameInput {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    border-color: aqua;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.inputLabel {
+    width: 100px;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+.dataInput {
+    width: 50%;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 2px;
+    font-weight: bold;
+    color: rgb(29, 28, 28);
+    background-color: rgb(185, 184, 184);
+}
+
+.dataInput:focus {
+    outline: none;
+}
+
+.small {
+    width: 25%;
+}
+
+.medium {
+    width: 35%;
 }

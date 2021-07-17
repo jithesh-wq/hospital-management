@@ -2,11 +2,15 @@ import './App.css';
 import NavItem from './components/NavItem';
 import DashBoard from './pages/DashBoard'
 import Admit from './pages/Admit'
+import UpdatePatient from './pages/UpdatePatient';
+import PatientDetails from './pages/PatientDetails'
 import {
   Route,
   NavLink,
   HashRouter
 } from "react-router-dom";
+import AllPatients from './pages/AllPatients';
+import CovidPatients from './pages/CovidPatients';
 function App() {
   return (
     <HashRouter>
@@ -60,7 +64,10 @@ function App() {
         <div className = "pageContainer">
             <Route exact path="/" component={DashBoard}/>
             <Route exact path="/admitpatient" component={Admit}/>
-            
+            <Route exact path="/updatepatient" component={UpdatePatient}/>
+            <Route exact path="/allpatients" component={AllPatients}/>
+            <Route exact path="/covidcases" component={CovidPatients}/>
+            <Route exact path="/patient" component={PatientDetails}/>
         </div>
       </div>
     </HashRouter>
