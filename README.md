@@ -1,3 +1,7 @@
+# Live Preview (Better Viewed in Desktop)
+
+https://hospital-management-wq.netlify.app/#/
+
 
 # Getting Started with Create React App
 
