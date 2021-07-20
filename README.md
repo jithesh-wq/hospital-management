@@ -1,7 +1,3 @@
-# Live Preview (View in Desktop)
-
-https://compassionate-feynman-30cda3.netlify.app/
-
 
 # Getting Started with Create React App
 
